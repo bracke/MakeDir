@@ -1,0 +1,26 @@
+Run <Obey$Dir>.!Boot
+Run <MakeDir$Dir>.Resources.IsTask MakeDir
+If <MakeDir$Task> <> 0 Then Run <MakeDir$Dir>.Resources.ReadToken MakeDirRes:Messages TASKEXIST
+If <MakeDir$Task> <> 0 Then ERROR 0 <ReadToken$Value>
+
+|
+RMEnsure UtilityModule 3.00 Run <MakeDir$Dir>.Resources.ReadToken MakeDirRes:Messages RO
+RMEnsure UtilityModule 3.00 ERROR 0 <ReadToken$Value>
+| 
+RMEnsure WindowManager 3.80 Run <MakeDir$Dir>.Resources.ReadToken MakeDirRes:Messages NESTED
+RMEnsure WindowManager 3.80 ERROR 0 <ReadToken$Value>
+|
+RMEnsure SharedCLibrary 0.01 System:modules.clib
+RMEnsure SharedCLibrary 0.01 Run <MakeDir$Dir>.Resources.ReadToken MakeDirRes:Messages MODCLIB
+RMEnsure SharedCLibrary 0.01 ERROR 0 <ReadToken$Value>
+|
+Run <MakeDir$Dir>.!Toolbox
+|
+UnSet MakeDir$Start_URI_Handler
+RMEnsure AcornURI 0.12 Set MakeDir$Start_URI_Handler 1
+<MakeDir$Dir>.Resources.IgnoreErr RMEnsure AcornURI 0.12 RMLoad System:Modules.Network.URI
+RMEnsure AcornURI 0.12 UnSet MakeDir$Start_URI_Handler
+RMEnsure AcornURI 0.12 Run <MakeDir$Dir>.Resources.ReadToken MakeDirRes:Messages MODURI
+RMEnsure AcornURI 0.12 ERROR 0 <ReadToken$Value>
+|
+<MakeDir$Dir>.Resources.MinSlot <MakeDir$Dir>.!RunImage %*0

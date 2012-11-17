@@ -1,0 +1,7 @@
+Run <Obey$Dir>.!Boot
+Run <MakeDir$Dir>.Resources.GetHandle MakeDir
+|
+If "<ConfiX$Dir>" = "" Then Run <MakeDir$Dir>.Resources.ReadToken SEDModeRes:Messages CONFIX
+If "<ConfiX$Dir>" = "" Then ERROR 0 <ReadToken$Value>
+|
+do if "<ConfiX$Dir>" <> "" Then Run <ConfiX$Dir> -res <MakeDir$Dir>.Resources -mes MakeDirRes:Messages -pos center,center -task <MakeDir$Handle>

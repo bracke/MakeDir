@@ -1,0 +1,38 @@
+| MakeDir Configure definitions
+
+Title = MakeDir
+Width = 900
+Height = 320
+CheckVersion = 0.46
+File = <Choices$Write>.MakeDir.Choices
+Separator = :
+Remark = #
+Boolean = 2
+
+[Main]
+
+Icon = Window
+Text = Main
+Width = 220
+
+{
+ Name = PLING
+ Text = Remove '!' from start
+ Type = Option
+ Default = On
+ Help = Remove '!' from start
+}
+{
+ Name = CASE
+ Text = Lower case
+ Type = Option
+ Default = On
+ Help = Lower case all but the first character.
+}
+{
+ Name = EXTENSION
+ Text = Remove extension
+ Type = Option
+ Default = On
+ Help = Remove extension.
+};

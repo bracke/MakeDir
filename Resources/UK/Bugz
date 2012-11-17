@@ -1,0 +1,79 @@
+# This is a Bugz description file
+[*Title]
+MakeDir
+
+[*Info]
+Program: MakeDir
+Distribution: Public
+Version:1.07 (2005-02-19)
+Release: Full public release
+
+[*Mail]
+bbracke@web.de
+
+[*Cat]
+
+
+[*Modules]
+AcornURI
+WindowManager
+MessageTrans
+Toolbox
+Window
+IconBar
+Menu
+ProgInfo
+Scale
+SaveAs
+FileInfo
+ToolAction
+ColourDBox
+ColourMenu
+DCS
+FontDBox
+FontMenu
+PrintDBox
+TextGadgets
+StrongHelp
+
+[*Show]
+MakeDir$Dir
+MakeDirRes$Path
+Bugz$Dir
+Choices$Dir
+Choices$Path
+Choices$Write
+Wimp$ScrapDir
+StrongHelp$Dir
+ConfiX$Dir
+MakeDir$Help
+MakeDir$Version
+MakeDir$Web
+MakeDir$Title
+MakeDir$Publisher
+MakeDir$Description
+
+[*Cat]
+Please submit as much information about what you were doing, what went
+right and what went wrong.
+
+[Iconbar menu]
+Please write in which submenu the problem occured and if you selected
+any menu entry then please write whether you did that using the mouse or
+with a keyboard shortcut.
+
+[Configuration]
+MakeDir uses ConfiX for configuration purposes. If you have any problems
+with it then please read the ConfiX manual before filing a bug report.
+Please describe how you opened the configuration window and what went
+wrong. Please include any error message you have encountered.
+
+[Bug reporting]
+If you have problems using Bugz then please consider whether this is
+caused by MakeDir or by Bugz.
+
+[Manual]
+Please write down any mistake you find in the manual, including spelling
+errors and omissions.
+
+

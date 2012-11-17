@@ -1,0 +1,18 @@
+Run <Obey$Dir>.Resources.ResFind MakeDir
+|
+Set MakeDir$Help MakeDirRes:MakeDir
+Set MakeDir$Version "1.07"
+Set MakeDir$Web "http://www.arcsite.de/hp/bracke/"
+Set MakeDir$Title "MakeDir"
+Set MakeDir$Publisher "Bent Bracke"
+Set MakeDir$Description "Creates directory and opens it."
+Run <MakeDir$Dir>.Resources.ReadToken MakeDirRes:Messages DESCRIPTION
+do Set MakeDir$Description <ReadToken$Value>
+|
+Set MakeDirSprites 2
+RMEnsure UtilityModule 5.00 Set MakeDirSprites 1
+RMEnsure UtilityModule 4.00 Set MakeDirSprites 0
+If <MakeDirSprites> = 2 Then Iconsprites <MakeDir$Dir>.!Sprites5
+If <MakeDirSprites> = 1 Then Iconsprites <MakeDir$Dir>.!Sprites4
+If <MakeDirSprites> = 0 Then Iconsprites <MakeDir$Dir>.!Sprites
+UnSet MakeDirSprites

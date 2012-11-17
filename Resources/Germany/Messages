@@ -1,0 +1,52 @@
+# StrongEd$Mode=Message
+_TaskName:MakeDir
+VERS:1.07 (2005-02-19)
+# Fehler Meldungen für die 'Obey' Dateien
+DESCRIPTION:MakeDir erleichtert den Umgang mit komprimierten Dateien indem es für die in der kompromierten Datei enthaltenden Dateien ein Verzeichnis erstellt und öffnet.
+CONFIX:ConfiX konnte nicht gefunden werden.
+TASKEXIST:MakeDir läuft schon.
+RO:MakeDir benötigt RISC OS 3.
+NESTED:Der Windowmanager ist zu alt (< 3.80).
+MODTW:Das Modul 'TaskWindow' ist für MakeDir erforderlich.
+MODCLIB:Das Modul 'SharedCLibrary' ist für MakeDir erforderlich.
+MODTB:Das Modul 'Toolbox' (V1.71) ist für MakeDir erforderlich.
+MODWD:Das Modul 'Window' (V1.79) ist für MakeDir erforderlich.
+MODIB:Das Modul 'IconBar' (V1.22) ist für MakeDir erforderlich.
+MODMU:Das Modul 'Menu' (V0.40) ist für MakeDir erforderlich.
+MODPI:Das Modul 'ProgInfo' (V0.20) ist für MakeDir erforderlich.
+MODSC:Das Modul 'Scale' (V0.19) ist für MakeDir erforderlich.
+MODSAVE:Das Modul 'SaveAs' (V0.22) ist für MakeDir erforderlich.
+MODFI:Das Modul 'FileInfo' (V0.22) ist für MakeDir erforderlich.
+MODTA:Das Modul 'ToolAction' (V0.23) ist für MakeDir erforderlich.
+MODCD:Das Modul 'ColourDBox' (V0.23) ist für MakeDir erforderlich.
+MODCM:Das Modul 'ColourMenu' (V0.24) ist für MakeDir erforderlich.
+MODDCS:Das Modul 'DCS' (V1.16) ist für MakeDir erforderlich.
+MODFB:Das Modul 'FontDBox' (V0.22) ist für MakeDir erforderlich.
+MODFM:Das Modul 'FontMenu' (V0.27) ist für MakeDir erforderlich.
+MODPT:Das Modul 'PrintDBox' (V0.20) ist für MakeDir erforderlich.
+MODTG:Das Modul 'TextGadgets' (V0.49) ist für MakeDir erforderlich.
+MODURI:Das Modul 'URI' ist für MakeDir erforderlich.
+#
+MSGCLOSED:Messages Datei is nicht offen.
+PROCESSING:Fehler beim bearbeiten der Datei.
+UNTITLED:Namenlos
+EXISTS:Es gibt schon eine Applikation mit diesem Namen, bitte einen anderen Namen wählen.
+UNTRAPPED:Unbekannter Fehler. %0
+CHOICES:Fehler beim lesen der Konfiguration. %0
+CONFIGURE:Fehler beim starten von !ConfiX. %0
+AUTOCREATE:Fehler beim Empfang der AutoCreate Message. %0
+TOOLBOXERROR:Fehler beim bearbeiten eines Toolbox Fehler. %0
+BUGZQUERY:Fehler beim bearbeiten einer Anfrage von der Bugz Applikation. %0
+BUGZCREATE:Fehler beim Erstellen der Bugz Fehlermeldung. %0
+NOBUGZ:Die Bugz Applikation konnte nicht gefunden werden. %0
+VIEWHOMEPAGE:Fehler beim öffnen der Homepage. %0
+SENDEMAIL:Fehler beim verschicken der E-Mail. %0
+MQUIT:Fehler beim Empfang der 'Quit' Message. %0
+TQUIT:Fehler beim Empfang der Toolbox 'Quit' Message. %0
+VIEWMANUAL:Fehler beim öffnen des Handbuchs. %0
+VIEWIHELP:Fehler beim starten der interaktiven Hilfe. %0
+VIEWCHAPTER:Fehler beim öffnen eines Kapitels im Handbuch. %0
+# Dummy tokens fro choices
+PLING:
+CASE:
+EXTENSION:
